@@ -24,7 +24,7 @@ nav{
     width: 100%;
     display: flex;
     flex-direction: row;
-    padding: 10px 100px 10px 50px;
+    padding: 10px 50px 10px 50px;
     align-items: center;
     justify-content: space-between;
 }
@@ -34,7 +34,6 @@ nav{
  gap: 100px;
 }
 .nav__link{
-
     font-size: 18px;
 font-family: 'Overlock SC', cursive;
     
@@ -44,6 +43,11 @@ font-family: 'Overlock SC', cursive;
     border-top : 1px solid white;
     border-bottom: 1px solid white;
     transition: 0.1s ease-in-out;
+}
+.navs{
+  display: flex;
+  gap: 50px;
+  font-size: 20px;
 }
 
 .head,.head2{
@@ -451,8 +455,107 @@ z-index: 10000;
   .none{
     display: none;
   }
+  @media (max-width:1500px) {
+    .section--2{
+      height: 100%;
+      background: linear-gradient(200deg, rgba(0, 0, 0, 0.2), black),
+      url("istockphoto-1386324284-1024x1024.jpg") no-repeat;
+      background-size: 100% 100%;
+    background-attachment: fixed;
+    padding: 100px 50px 50px 50px;
+  }
+  .activate{
+  font-size: 55px;
+  text-align: left;
+  font-weight: 900;
+  font-style: italic;
+  font-family: 'Overlock SC', cursive;
+  padding-bottom: 10px
+  
+  }
+  .activate-text{
+      font-size: 24px;
+      line-height: 1.5;
+      font-family: 'Overlock SC', cursive;
+  
+  }
+  .road--body{
+      background: white;
+      height: 300px;
+      width: 445px;
+  filter: blur(5px);
+  }
+  .road--content{
+  background:black;
+  position: relative;
+  width: 440px;
+  height: 280px;
+  top: -290px; 
+  bottom: 3px;
+  left: 3px;
+  padding: 50px 30px;
+  }
+  .road--tab{
+      padding-top: 50px;
+  
+  }
+  .road-head{
+      font-size: 30px ;
+      padding-bottom:10px ;
+  }
+  .road-writeup{
+  font-size: 24px;
+  }
+  .all4{
+      display: grid;
+      grid-template-columns: 1px 1px ;
+      gap:45vw ;
+  }
 
-  @media (max-width:950px) {
+  section--1{
+    height: 100%;
+  padding: 00px 0px;
+}
+.imgs{
+    width: 300px;
+    height: 300px;
+}
+.all{
+ font-size: 30px;
+}
+.unique{
+    font-size: 30px;
+}
+.total{
+    gap: 50px;
+
+}
+.hold{
+    padding-top: 100px;
+}
+.holder{
+    font-size: 50px;
+}
+.line{
+    width: 200px;
+    height: 1px;
+    left: 20vw;
+}
+.holders--all{
+padding: 100px 0 0px 0;
+gap: 100px
+}
+.holders-head{
+    font-size: 40px;
+    padding: 15px;
+}
+.holders-writeup, .holders-list{
+    font-size: 15px;
+}
+
+
+  }
+  @media (max-width:990px) {
     .bar{
       font-size: 20px;
       cursor: pointer;
@@ -466,14 +569,18 @@ z-index: 10000;
       align-items: center;
       justify-content: space-between;
   }
+  .navs{
+    display: none;
+
+  }
   .nav-ul{
       display: flex;
       flex-direction: column;
    gap: 50px;
-   padding: 50px 5vw 50px 5vw;
+   padding: 10vw 5vw 50px 5vw;
    height: 100vh;
    width: 50%;
-   margin: 590px -215px 0 0;
+   margin: 600px -215px 0 0;
    right: -25%;
    position: fixed;
    transition: 0.5s;
@@ -482,8 +589,6 @@ z-index: 10000;
   }
   .nav__link{
       font-size: 18px;
-  font-family: 'Overlock SC', cursive;
-      
   }
   .to{
     display: flex;
@@ -501,6 +606,140 @@ padding: 13px 20px;
   .show{
     right: 25%;
   }
+  .samu--head{
+    font-size: 60px;
+    padding-top: 210px;
+}
+.section--1{
+  padding:100px 50px;
+}
+.imgs{
+    width: 200px;
+    height: 200px;
+}
+.all{
+    font-size: 20px;
+}
+.unique{
+    font-size: 20px;
+    font-weight: 900;
+}
+.total{
+    gap: 100px;
+}
+.hold{
+    padding-top: 100px;
+}
+.holder{
+    font-size: 30px;
+}
+.line{
+    width: 150px;
+    height: 1px;
+    left: 33vw;
+}
+.holders--all{
+padding: 50px 0 50px 0;
+gap: 100px;
+}
+.holders-head{
+    font-size: 25px;
+    padding: 15px;
+}
+.holders-writeup, .holders-list{
+    font-size: 15px;
+}
+.holders-list{
+list-style: circle;
+}
+.holders-ul{
+    padding-top: 10px;
+    padding-left: 15px;
+}
+
+.section--2{
+    height: 100%;
+  padding: 50px 50px 0px 50px;
+}
+.activate{
+font-size: 45px;
+padding-bottom: 10px
+}
+.activate-text{
+    font-size: 20px;
+    line-height: 1.5;
+}
+.road--body{
+    height: 250px;
+    width: 253px;
+filter: blur(5px);
+}
+.road--content{
+width: 250px;
+height: 250px;
+top: -255px; 
+bottom: 3px;
+left: 3px;
+padding: 10px 30px;
+}
+.road--tab{
+    padding-top: 50px;
+}
+.road-head{
+    font-size: 25px ;
+    padding-bottom:5px ;
+}
+.road-writeup{
+font-size: 18px;
+}
+.all4{
+    display: grid;
+    grid-template-columns: 1px 1px ;
+    gap:45vw ;
+}
+
+.faq-total{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.faq-all{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid white;
+    padding: 15px 20px;
+    cursor: pointer;
+}
+.faq-head{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    transition: 1s;
+}
+.rotate{
+    transform: rotate(180deg);
+    transition: 1s;
+}
+
+.first{
+    font-size: 30px;
+    transition: 1s;
+}
+.faq-content{
+    font-size: 25px;
+    padding-top: 20px;
+    transition: 1s;
+    
+}
+.faq-close{
+    display: none;
+    transition: 1s;
+}
+
+  
+
+
   }
   @media (max-width:550px) {
     .bar{
@@ -515,12 +754,10 @@ padding: 13px 20px;
   .nav-ul{
       display: flex;
    gap: 50px;
-   padding: 10px 10px 0px 10px;
+   padding: 50px 10px 0px 10px;
    width: 50%;
    margin: 90vh 80px 0 0;
    right: -100%;
-   /* background: linear-gradient(200deg, hsla(0, 0%, 0%, 0.2), black),
-   url("istockphoto-157309879-1024x1024.jpg") no-repeat; */
    z-index: 100000;
   }
   .nav__link{
@@ -614,12 +851,12 @@ padding-bottom: 10px
 }
 .road--body{
   height: 150px;
-  width: 145px;
+  width: 100%;
 
 }
 .road--content{
-width: 140px;
-height: 140px;
+width:100%;
+height: 150px;
 top: -150px; 
 bottom: 3px;
 left: 0px;
@@ -638,10 +875,13 @@ font-size: 10px;
 padding-bottom: 10px;
 }
 .all4{
-  gap:45vw;
+  gap:0;
+  display: flex;
+  flex-direction: column;
 }
 .section--3{
 padding: 20px 10px 20px 10px;
+height: 80vh;
 }
 .faq,.team{
   font-size: 25px;
@@ -664,14 +904,17 @@ padding-bottom: 20px;
 }
 .section--4{
 padding: 30px 0;
+height: 80vh;
 }
 .swiper {
 width: 200px;
 height: 200px;
-padding-top: 30px;
+}
+.team{
+  padding-bottom: 110px;
 }
 .swiper-img{
-  height: 120px;
+  height: 190px;
 }
 .swiper-text{
   padding: 10px 10px 10px 10px;
@@ -738,17 +981,16 @@ footer{
   height: 100%;
 }
 .footer_both{
-  padding: 2px 4px 2px 4px ;
+  padding: 10px 4px 10px 4px ;
 justify-content: space-between;
 }
 .second{
-
   display: grid;
 grid-template-columns: 1px 1px 1px;
 gap:20px ;
 }
 .fir,.firs{
-font-size: 8px;
+font-size: 10px;
 }
 .footer_link{
   font-size: 10px;
