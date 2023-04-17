@@ -13,7 +13,9 @@ const button = document.querySelectorAll('button')
 const overlay = document.querySelector('.overlay')
 const axe = document.querySelector('.axe')
 const loader = document.querySelector('#preloader')
-
+const bar = document.querySelector('.bar')
+const bar2 = document.querySelector('.bar2')
+const nav_ul = document.querySelector('.nav-ul')
 AOS.init();
 
 window.addEventListener('load', function(){
@@ -31,7 +33,6 @@ nav.classList.remove('open')
 },{
     root:null,
     threshold:0.15,
-    // rootMargin:
 })
 headerObs.observe(header)
 
@@ -120,34 +121,13 @@ var swiper = new Swiper(".mySwiper", {
     },
   });
 
-
-
-
-
-
-
-
-
-
-// const interval = 10000
-// let start = 0
-// let number = parseInt(unique.dataset.set)
-// let duration = Math.floor(interval / number)
-
-//  let count = setInterval(()=>{
-// start++
-
-// unique.textContent = start
-
-// if(start === number){
-// clearInterval(count)
-// }
-
-// duration })
-// console.log(number);
-
-
-
+const select = document.querySelectorAll('.nav__link')
+select.forEach((e)=>{
+    e.addEventListener('click',function(){
+        nav_ul.classList.toggle('show')
+        overlay.classList.toggle('hidden')
+    })
+})
 
     Swipper.addEventListener('click',function(ee){
         if(ee.target.classList.contains('swiper-img')){
@@ -244,18 +224,11 @@ else{
 inter.observe(header)
 
 
-const bar = document.querySelector('.bar')
-const bar2 = document.querySelector('.bar2')
-const nav_ul = document.querySelector('.nav-ul')
 bar.addEventListener('click',function(){
     nav_ul.classList.toggle('show')
     overlay.classList.toggle('hidden')
 })
 bar2.addEventListener('click',function(){
-    nav_ul.classList.toggle('show')
-    overlay.classList.toggle('hidden')
-})
-overlay.addEventListener('click',function(){
     nav_ul.classList.toggle('show')
     overlay.classList.toggle('hidden')
 })
